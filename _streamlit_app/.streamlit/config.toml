@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#00A0E0" # Blue for buttons, slider and other elements.
+backgroundColor = "#FFFFFF" # White for background of mainpage.
+secondaryBackgroundColor = "#FFFFFF" # White for background of sidebar.
+textColor = "#000000"
+font = "sans serif"

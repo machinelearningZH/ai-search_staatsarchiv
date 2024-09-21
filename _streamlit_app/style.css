@@ -1,0 +1,16 @@
+/* style.css */
+.stTextInput>div>div>input {
+    border: 2px solid #00A0E0 !important;
+    /* frame for searchbox */
+    border-radius: 5px;
+    /* corners */
+    padding: 8px;
+    /* inner distance to frame */
+    line-height: 50px !important;
+    box-sizing: border-box !important;
+}
+
+.stTextInput>div>div>div {
+    display: none !important;
+    /* hide "Press Enter to apply" box */
+}
