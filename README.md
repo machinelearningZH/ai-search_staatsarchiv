@@ -1,4 +1,4 @@
-# Intelligent Document Search for Staatsarchiv Zurich
+# Intelligent Document Search for the Staatsarchiv Zurich
 **Enhance access to the central collections of the Staatsarchiv Zürich with an intelligent hybrid search application.**
 
 ![GitHub License](https://img.shields.io/github/license/machinelearningzh/ai-search_staatsarchiv)
@@ -49,8 +49,15 @@ To set up the app:
 > [!Note]
 > The app logs user interactions locally to a file named `app.log`. If you prefer not to collect analytics, simply comment out the relevant function call in the code.
 
+### Embedding Model
+For the embeddings we use [Jina AIs](https://jina.ai/) model [jina-embeddings-v2-base-de](https://huggingface.co/jinaai/jina-embeddings-v2-base-de). The model is a German/English bilingual text embedding model supporting 8192 sequence length. According to the model card it is designed for «high performance in mono-lingual & cross-lingual applications and trained … specifically to support mixed German-English input without bias». Technical report [here](https://arxiv.org/abs/2402.17016). 
 
-## Project information
+We tested several other models as well. PM-AI's [bi-encoder_msmarco_bert-base_german ](https://huggingface.co/PM-AI/bi-encoder_msmarco_bert-base_german) model proved to be comparable and an excellent choice too. Jina's model offers more flexibility in terms of context (8'192 tokens vs. 350) and provides bilingual capabilities. Both models are relatively lightweight, with PM-AI's model at 440 MB and Jina's at 326 MB.
+
+Note that we chunk all text on a sentence basis to a maximum of 500 tokens with a 100-token overlap. 
+
+
+## Project Information
 The [Staatsarchiv Zürich](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html) manages and catalogs the «Zentralen Serien des Kantons Zürich 19. und 20. Jahrhundert» which include important historical documents such as minutes from the Cantonal Council, Government Council resolutions, collections of laws, and the Official Gazette. These records span from 1803 to the present, making them linguistically and thematically diverse.
 
 We (the Staatsarchiv and the [Statistical Office](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/statistisches-amt.html)) developed an intelligent search application that enhances access to these extensive archives. 
@@ -71,10 +78,10 @@ Semantic search leverages statistical methods and machine learning to analyze la
 - The app is inexpensive to run and maintain. It can be deployed on a local machine or a virtual machine with moderate resources. At the moment we use a VM with 8 CPUs and 32 GB RAM.
 
 
-## Project team
+## Project Team
 **Rebekka Plüss** (Staatsarchiv) und **Patrick Arnecke** (Statistisches Amt, Team Data).
 
-## Feedback and contributing
+## Feedback and Contributing
 We welcome your feedback! Please share your thoughts and let us know how you use the app in your institution. You can [email us](staatsarchivzh@ji.zh.ch) or contribute by opening an issue or a pull request.
 
 Please note that we use [Ruff](https://docs.astral.sh/ruff/) for linting and code formatting with default settings.
