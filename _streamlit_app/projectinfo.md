@@ -8,7 +8,7 @@ Sourcecode und die detaillierte Projektdokumentation befinden sich auf einem [ö
 
 ## 🔍 Was ist Semantische Suche?
 
-Im Gegensatz zu einer lexikalischen Suche nach Stichworten kann eine semantische Suche auch **inhaltlich ähnliche** Worte berücksichtigen, die nicht mit dem Suchwort übereinstimmen. Die semantische Suche nach dem Wort *Essen* kann z.B. Texte finden, die die Worte *Lebensmittel*, *Nahrungsmittel*, *Milch*, *Bäckerin* oder *Brot* enthalten, ohne dass das Wort *Essen* darin vorkommt.
+Im Gegensatz zu einer lexikalischen Suche nach Stichworten kann eine semantische Suche auch **inhaltlich ähnliche** Worte berücksichtigen, die nicht mit dem Suchwort übereinstimmen. Die semantische Suche nach dem Wort *Essen* kann z.B. Texte finden, die die Worte *Lebensmittel*, *Nahrungsmittel*, *Milch*, *Bäckerin* oder *Brot* enthalten, ohne dass das Wort *Essen* darin vorkommt. Die Suche funktioniert auch **bilingual** in Deutsch und Englisch.
 
 Eine semantische Suche kann zudem **Texte mittels eines Referenzdokuments finden**. Eine Suche mit einem Regierungsratsbeschluss führt zu thematisch ähnlich gelagerten Beschlüssen und Geschäften in den vier Serien.
 
