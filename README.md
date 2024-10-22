@@ -39,7 +39,7 @@ To set up the app:
 
 ### Run the Notebooks to Prepare the Data
 - Run the notebooks. Open these either in an IDE like [Visual Studio Code](https://code.visualstudio.com/). Alternatively, you can use [Jupyter Notebook](https://docs.jupyter.org/en/latest/running.html) or [Jupyter Lab](https://jupyter.org/install).
-- Use the final notebook to create the [Weaviate](https://weaviate.io/) search index. Data is stored by default in `.local/share/weaviate/`. If you are deploying the app on a remote machine, copy the index data to the same path on the remote machine, or change the path in the app like so:
+- Use the final notebook to create the [Weaviate](https://weaviate.io/developers/weaviate/installation/embedded) search index. Data is stored by default in `.local/share/weaviate/`. If you are deploying the app on a remote machine, copy the index data to the same path on the remote machine, or change the path in the app like so:
 `client = weaviate.connect_to_embedded(persistence_data_path="/your_data_path_on_your_vm/")`.
 
 ### Run the Search App
@@ -79,7 +79,7 @@ Semantic search leverages statistical methods and machine learning to analyze la
 
 
 ## Project Team
-**Rebekka Plüss** (Staatsarchiv) und **Patrick Arnecke** (Statistisches Amt, Team Data).
+**Rebekka Plüss** (Staatsarchiv) and **Patrick Arnecke** (Statistisches Amt, Team Data). A big thanks goes to **Sarah Murer** and **Dominik Frefel** too!
 
 ## Feedback and Contributing
 We welcome your feedback! Please share your thoughts and let us know how you use the app in your institution. You can [email us](staatsarchivzh@ji.zh.ch) or contribute by opening an issue or a pull request.
