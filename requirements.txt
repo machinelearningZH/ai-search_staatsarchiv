@@ -3,10 +3,10 @@ pandarallel
 numpy
 beautifulsoup4
 requests
-zipfile
 python-dotenv
 spacy
 sentence-transformers
 pyarrow
 streamlit
 weaviate-client
+tqdm
