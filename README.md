@@ -65,6 +65,8 @@ The [Staatsarchiv Zürich](https://www.zh.ch/de/direktion-der-justiz-und-des-inn
 
 We (the Staatsarchiv and the [Statistical Office](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/statistisches-amt.html)) developed an intelligent search application that enhances access to these extensive archives.
 
+For more information, see the following article in the magazine ABI Technik: <a href="https://www.degruyter.com/document/doi/10.1515/abitech-2025-0003/html" target="_blank">Mit Künstlicher Intelligenz zu besserer Nutzbarkeit: Die Zentralen Serien des Kantons Zürich (19. und 20. Jahrhundert) neu zugänglich gemacht</a>
+
 ## What Does the App Do?
 
 This app allows users to search through these extensive archives using both lexical and semantic search methods. Unlike a traditional lexical search that looks for exact keywords, semantic search identifies words, sentences, or paragraphs with similar meanings, even if they don't exactly match the search term. For example, a search for «technology» might return documents containing related concepts like «digitalization», «artificial intelligence», «software development», or «computer science» even if «technology» isn't mentioned directly.
