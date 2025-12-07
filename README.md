@@ -2,6 +2,7 @@
 
 **Enhance access to the central collections of the Staatsarchiv Zürich with an intelligent hybrid search application.**
 
+![GitHub License](https://img.shields.io/github/license/machinelearningZH/ai-search_staatsarchiv)
 [![PyPI - Python](https://img.shields.io/badge/python-v3.9+-blue.svg)](https://github.com/machinelearningZH/ai-search_staatsarchiv)
 [![GitHub Stars](https://img.shields.io/github/stars/machinelearningZH/ai-search_staatsarchiv.svg)](https://github.com/machinelearningZH/ai-search_staatsarchiv/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/machinelearningZH/ai-search_staatsarchiv.svg)](https://github.com/machinelearningZH/ai-search_staatsarchiv/issues)
