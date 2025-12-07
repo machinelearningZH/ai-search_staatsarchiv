@@ -55,8 +55,6 @@ To set up the app:
 
 For the embeddings we use [Jina AI's](https://jina.ai/) model [jina-embeddings-v2-base-de](https://huggingface.co/jinaai/jina-embeddings-v2-base-de). The model is a German/English bilingual text embedding model supporting 8,192 sequence length. According to the model card it is designed for «high performance in mono-lingual & cross-lingual applications and trained … specifically to support mixed German-English input without bias». Technical report [here](https://arxiv.org/abs/2402.17016).
 
-We tested several other models as well. PM-AI's [bi-encoder_msmarco_bert-base_german](https://huggingface.co/PM-AI/bi-encoder_msmarco_bert-base_german) model proved to be comparable and an excellent choice too. Jina's model offers more flexibility in terms of context (8,192 tokens vs. 350) and provides bilingual capabilities. Both models are relatively lightweight, with PM-AI's model at 440 MB and Jina's at 326 MB.
-
 Note that we chunk all text on a sentence basis to a maximum of 500 tokens with a 100-token overlap.
 
 ## Project Information
@@ -84,11 +82,11 @@ Semantic search leverages statistical methods and machine learning to analyze la
 
 ## Project Team
 
-**Rebekka Plüss** (Staatsarchiv) and **Patrick Arnecke** (Statistisches Amt, Team Data). A big thanks goes to **Sarah Murer** and **Dominik Frefel** too!
+**Rebekka Plüss** (Staatsarchiv) and **Patrick Arnecke** (Statistisches Amt, Team Data). A big thanks goes to **Sarah Murer** and **Dominik Frefel** too.
 
 ## Feedback and Contributing
 
-We welcome your feedback! Please share your thoughts and let us know how you use the app in your institution. You can [email us](staatsarchivzh@ji.zh.ch) or contribute by opening an issue or a pull request.
+We welcome your feedback. Please share your thoughts and let us know how you use the app in your institution. You can [email us](staatsarchivzh@ji.zh.ch) or contribute by opening an issue or a pull request.
 
 Please note that we use [Ruff](https://docs.astral.sh/ruff/) for linting and code formatting with default settings.
 
@@ -98,4 +96,4 @@ The software in this project is licensed under the MIT License. See the [LICENSE
 
 ## Disclaimer
 
-This software (the Software) incorporates open-source models (the Models) from providers like  Huggingface. The app has been developed according to and with the intent to be used under Swiss law. Please be aware that the EU Artificial Intelligence Act (EU AI Act) may, under certain circumstances, be applicable to your use of the Software. You are solely responsible for ensuring that your use of the Software as well as of the underlying Models complies with all applicable local, national and international laws and regulations. By using this Software, you acknowledge and agree (a) that it is your responsibility to assess which laws and regulations, in particular regarding the use of AI technologies, are applicable to your intended use and to comply therewith, and (b) that you will hold us harmless from any action, claims, liability or loss in respect of your use of the Software.
+This software (the Software) incorporates open-source models (the Models) from providers like Huggingface. The app has been developed according to and with the intent to be used under Swiss law. Please be aware that the EU Artificial Intelligence Act (EU AI Act) may, under certain circumstances, be applicable to your use of the Software. You are solely responsible for ensuring that your use of the Software as well as of the underlying Models complies with all applicable local, national and international laws and regulations. By using this Software, you acknowledge and agree (a) that it is your responsibility to assess which laws and regulations, in particular regarding the use of AI technologies, are applicable to your intended use and to comply therewith, and (b) that you will hold us harmless from any action, claims, liability or loss in respect of your use of the Software.
