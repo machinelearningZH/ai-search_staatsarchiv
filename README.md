@@ -31,22 +31,22 @@ This repository provides the production-ready code for our search app, which is 
 
 To set up the app:
 
-- Create a [Conda](https://conda.io/projects/conda/en/latest/index.html) environment: `conda create -n search python=3.9`
-- Activate the environment: `conda activate search`
+[Install uv](https://docs.astral.sh/uv/getting-started/installation/) for environment management.
+
 - Clone this repository.
 - Change into the project directory: `cd ai-search_staatsarchiv/`
-- Install the required packages: `pip install -r requirements.txt`
+- Install the required packages: `uv venv` and then `uv sync`
 
 ### Run the Notebooks to Prepare the Data
 
 - Run the notebooks. Open these either in an IDE like [Visual Studio Code](https://code.visualstudio.com/). Alternatively, you can use [Jupyter Notebook](https://docs.jupyter.org/en/latest/running.html) or [Jupyter Lab](https://jupyter.org/install).
 - Use the final notebook to create the [Weaviate](https://weaviate.io/developers/weaviate/installation/embedded) search index. Data is stored by default in `.local/share/weaviate/`. If you are deploying the app on a remote machine, copy the index data to the same path on the remote machine, or change the path in the app like so:
-`client = weaviate.connect_to_embedded(persistence_data_path="/your_data_path_on_your_vm/")`.
+  `client = weaviate.connect_to_embedded(persistence_data_path="/your_data_path_on_your_vm/")`.
 
 ### Run the Search App
 
 - Change into app directory: `cd _streamlit_app/`
-- Start the app: `streamlit run hybrid_search_stazh.py`
+- Start the app: `uv run streamlit run hybrid_search_stazh.py`
 
 > [!Note]
 > The app logs user interactions locally to a file named `app.log`. If you prefer not to collect analytics, simply comment out the relevant function call in the code.
@@ -91,3 +91,11 @@ Semantic search leverages statistical methods and machine learning to analyze la
 We welcome your feedback! Please share your thoughts and let us know how you use the app in your institution. You can [email us](staatsarchivzh@ji.zh.ch) or contribute by opening an issue or a pull request.
 
 Please note that we use [Ruff](https://docs.astral.sh/ruff/) for linting and code formatting with default settings.
+
+## License
+
+The software in this project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+
+This software (the Software) incorporates open-source models (the Models) from providers like  Huggingface. The app has been developed according to and with the intent to be used under Swiss law. Please be aware that the EU Artificial Intelligence Act (EU AI Act) may, under certain circumstances, be applicable to your use of the Software. You are solely responsible for ensuring that your use of the Software as well as of the underlying Models complies with all applicable local, national and international laws and regulations. By using this Software, you acknowledge and agree (a) that it is your responsibility to assess which laws and regulations, in particular regarding the use of AI technologies, are applicable to your intended use and to comply therewith, and (b) that you will hold us harmless from any action, claims, liability or loss in respect of your use of the Software.
