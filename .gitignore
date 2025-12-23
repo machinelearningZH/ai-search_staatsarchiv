@@ -1,6 +1,5 @@
 
 .DS_Store
-*.code-workspace
 *.xml
 /_01_data-input/OS
 /_01_data-input/KRP
