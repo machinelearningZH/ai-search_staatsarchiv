@@ -23,3 +23,8 @@ dependencies = [
     "de-core-news-lg @ https://github.com/explosion/spacy-models/releases/download/de_core_news_lg-3.8.0/de_core_news_lg-3.8.0-py3-none-any.whl",
     "lxml>=6.0.2",
 ]
+
+[tool.uv]
+exclude-newer = "7 days"
+
+
