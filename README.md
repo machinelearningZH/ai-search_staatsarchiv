@@ -62,7 +62,7 @@ Note that we chunk all text on a sentence basis to a maximum of 500 tokens with 
 
 The [Staatsarchiv Zürich](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html) manages and catalogs the «Zentralen Serien des Kantons Zürich 19. und 20. Jahrhundert», which includes important historical documents such as minutes from the Cantonal Council, Government Council resolutions, collections of laws, and the Official Gazette. These records span from 1803 to the present, making them linguistically and thematically diverse.
 
-We (the Staatsarchiv and the [Statistical Office](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/statistisches-amt.html)) developed an intelligent search application that enhances access to these extensive archives.
+We (the Staatsarchiv and the [Office for Statistics and Data](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/amt-fuer-statistik-und-daten.html)) developed an intelligent search application that enhances access to these extensive archives.
 
 For more information, see the following article in the magazine ABI Technik: <a href="https://www.degruyter.com/document/doi/10.1515/abitech-2025-0003/html" target="_blank">Mit Künstlicher Intelligenz zu besserer Nutzbarkeit: Die Zentralen Serien des Kantons Zürich (19. und 20. Jahrhundert) neu zugänglich gemacht</a>
 
@@ -83,7 +83,7 @@ Semantic search leverages statistical methods and machine learning to analyze la
 
 ## Project Team
 
-**Rebekka Plüss** (Staatsarchiv) and **Patrick Arnecke** (Statistisches Amt, Team Data). A big thanks goes to **Sarah Murer** and **Dominik Frefel** as well.
+**Rebekka Plüss** (Staatsarchiv) and **Patrick Arnecke** (Amt für Statistik und Daten, Team Data). A big thanks goes to **Sarah Murer** and **Dominik Frefel** as well.
 
 ## Feedback and Contributing
 
