@@ -25,9 +25,6 @@ dependencies = [
 ]
 
 [tool.uv]
-constraint-dependencies = ["certifi>=2026.10.19"]
-# eMudhra/emSign: remove only certifi exceptions once artifacts age seven days.
-exclude-newer-package = { certifi = false }
 exclude-newer = "7 days"
 
 
